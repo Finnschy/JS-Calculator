@@ -5,6 +5,7 @@
     font-family: 'Space Grotesk', sans-serif;
     box-sizing: border-box;
     font-size: 1.5rem;
+    color: #333;
 }
 
 body {
@@ -33,7 +34,7 @@ h1 {
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
-    box-shadow: 5px 5px 10px #B6BBD5, -5px -5px 10px #DAE1FF;
+    box-shadow: 5px 5px 20px #B6BBD5, -5px -5px 20px #DAE1FF;
 }
 
 
@@ -61,11 +62,13 @@ h1 {
     box-shadow: 3.6px 3.6px 15px #B6BBD5, -3.6px -3.6px 15px #DAE1FF;
 }
 
+/* gradient farblich anpassen?? */
+
 #calcKeys button {
     display: block;
     border: none;
     cursor: pointer;
-
+ 
 }
 
 #equal {
@@ -86,4 +89,33 @@ h1 {
 
 #calcKeys button:focus {
     outline: none;
+}
+
+#calcKeys button:hover {
+    background: #C8CEEA;
 } 
+
+
+
+@media only screen and (max-width: 412px) {
+
+    * {
+        font-size: 1.1rem;
+    }
+     h1 {
+         margin: 0 0 20% 0;
+     }
+
+    .container {
+        max-width: 12rem;
+    }
+
+    #add, #sub, #multi, #divide, #seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #zero, #dot, #reset {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    #calcKeys {
+        gap: .5rem;
+    }
+}
