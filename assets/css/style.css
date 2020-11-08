@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #C8CEEA;
+}
+
+.container {
+    max-width: 40rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 5% 0
+}
+
+.calcBox {
+    max-width: 25rem;
+    margin: 2% auto;
+    padding: 10%;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    box-shadow: 5px 5px 10px #B6BBD5, -5px -5px 10px #DAE1FF;
+}
+
+
+#calcDisp {
+    padding: .5rem 0;
+    text-align: right;
+    font-size: 2rem;
+}
+
+#calcKeys {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#add, #sub, #multi, #divide, #seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #zero, #dot, #reset {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: linear-gradient(145deg, #AAAFC7, #E6EDFF);
+    box-shadow: 3.6px 3.6px 15px #B6BBD5, -3.6px -3.6px 15px #DAE1FF;
+}
+
+#calcKeys button {
+    display: block;
+    border: none;
+    cursor: pointer;
+
+}
+
+#equal {
+    grid-column: -2;
+    grid-row: 2 / span 4;
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+    background: linear-gradient(110deg, #AAAFC7, #E6EDFF);
+    box-shadow: 3.6px 3.6px 15px #B6BBD5, -3.6px -3.6px 15px #DAE1FF;
+}
+
+#calcKeys button:active {
+    box-shadow: inset 3.6px 3.6px 20px #B6BBD5, inset -3.6px -3.6px 20px #DAE1FF;
+}
+
+#calcKeys button:focus {
+    outline: none;
+} 
